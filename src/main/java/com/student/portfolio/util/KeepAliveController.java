@@ -30,7 +30,7 @@ public class KeepAliveController {
     @Scheduled(fixedRate = 180000) // 3 minutes = 180000 ms
     public void callSelf() {
         try {
-            String url = "http://localhost:8080/keep-alive"; // replace with public URL if deployed
+            String url = "https://portfolio-backend-20s0.onrender.com/keep-alive"; // replace with public URL if deployed
             String response = restTemplate.getForObject(url, String.class);
             System.out.println("KeepAlive ping: " + response);
         } catch (Exception e) {
