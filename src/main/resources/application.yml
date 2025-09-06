@@ -4,8 +4,8 @@ spring:
   mail:
     host: smtp.gmail.com       
     port: 587
-    username: ${provide-gmail-here}
-    password: ${provide-password-here}   # Please dont share 
+    username: ${SPRING_MAIL_USERNAME}
+    password: ${SPRING_MAIL_PASSWORD}   # Please dont share 
     properties:
       mail:
         smtp:
@@ -33,7 +33,7 @@ logging:
 
 google:
   client:
-    id: ${provide-your-id-here}  # Please dont share 
-    secret: ${provide-your-secret-here}   # Please dont share 
+    id: ${GOOGLE_CLIENT_ID}  # Please dont share 
+    secret: ${GOOGLE_CLIENT_SECRET}   # Please dont share 
   redirect:
-    uri: ${http://localhost:4200/login/google/callback}
+    uri: ${GOOGLE_REDIRECT_URI}
