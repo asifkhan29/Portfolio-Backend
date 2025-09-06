@@ -30,8 +30,7 @@ public class GoogleAuthService {
     @Value("${google.client.secret}")
     private String clientSecret;
 
-    @Value("${google.redirect.uri}")
-    private String redirectUri;
+    private String redirectUri = "https://create-portfolios.netlify.app/login/google/callback";
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
