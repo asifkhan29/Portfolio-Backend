@@ -22,8 +22,7 @@ public class GoogleAuthController {
     @Value("${google.client.id}")
     private String clientId;
 
-    @Value("${google.redirect.uri}")
-    private String redirectUri;
+    private String redirectUri = "https://create-portfolios.netlify.app/login/google/callback";
 
     private final GoogleAuthService googleAuthService;
 
