@@ -36,4 +36,4 @@ google:
     id: ${GOOGLE_CLIENT_ID}  # Please dont share 
     secret: ${GOOGLE_CLIENT_SECRET}   # Please dont share 
   redirect:
-    uri: ${GOOGLE_REDIRECT_URI}
+    uri: https://create-portfolios.netlify.app/login/google/callback
