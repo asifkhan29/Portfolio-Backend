@@ -38,7 +38,7 @@ public class SecurityConfig {
             		// In the filterChain method, update the requestMatchers:
             		.requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html"
             				, 
-            		                 "/api/auth/**", "/login/google/**"  ,"/api/portfolios/public/**").permitAll()
+            		                 "/api/auth/**","/keep-alive", "/login/google/**"  ,"/api/portfolios/public/**").permitAll()
             		.requestMatchers("/h2-console/**").permitAll()
 
             		.anyRequest().authenticated()
