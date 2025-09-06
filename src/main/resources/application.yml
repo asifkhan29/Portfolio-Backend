@@ -4,8 +4,8 @@ spring:
   mail:
     host: smtp.gmail.com       
     port: 587
-    username: asifty21@gmail.com
-    password: lvtn regz evez btsy   # Please dont share 
+    username: ${provide-gmail-here}
+    password: ${provide-password-here}   # Please dont share 
     properties:
       mail:
         smtp:
@@ -33,7 +33,7 @@ logging:
 
 google:
   client:
-    id: 834231039211-g8akm4blnqjbtaqna1vtks0udpnp2uoe.apps.googleusercontent.com  # Please dont share 
-    secret: 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   # Please dont share 
+    id: ${provide-your-id-here}  # Please dont share 
+    secret: ${provide-your-secret-here}   # Please dont share 
   redirect:
-    uri: http://localhost:4200/login/google/callback
+    uri: ${http://localhost:4200/login/google/callback}
