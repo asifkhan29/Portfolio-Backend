@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: prod 
+  mail:
+    host: smtp.gmail.com       
+    port: 587
+    username: asifty21@gmail.com
+    password: lvtn regz evez btsy   # Please dont share 
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+           
+  
+        
+        
+jwt:
+  secret: "z9F!2xBv@pQ7kL%uH#4tM1sN&dR6jW^yG*eC8aV0bXqZ3rT"
+  expirationMs: 9000000 # 15 minutes
+  refreshExpirationMs: 604800000 # 7 days
+
+logging:
+  level:
+    com.example.jwtprofiles: DEBUG
+
+google:
+  client:
+    id: 834231039211-g8akm4blnqjbtaqna1vtks0udpnp2uoe.apps.googleusercontent.com  # Please dont share 
+    secret: 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   # Please dont share 
+  redirect:
+    uri: http://localhost:4200/login/google/callback
