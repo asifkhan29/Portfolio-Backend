@@ -71,7 +71,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration corsConfig = new CorsConfiguration();
-        corsConfig.setAllowedOrigins(List.of("*")); // Frontend origin
+        corsConfig.setAllowedOrigins(List.of("https://create-portfolios.netlify.app")); // Frontend origin
         corsConfig.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")); // Allowed HTTP methods
         corsConfig.setAllowedHeaders(List.of("Authorization", "Content-Type")); // Allowed HTTP headers
         corsConfig.setExposedHeaders(List.of("Authorization")); // Expose Authorization header
